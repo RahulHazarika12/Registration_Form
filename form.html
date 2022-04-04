@@ -3,19 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>JavaScript Form Validation using a sample registration form</title>
-    <meta
-      name="keywords"
-      content="example, JavaScript Form Validation, Sample registration form"
-    />
-    <meta
-      name="description"
-      content="This document is an example of JavaScript Form Validation using a sample registration form. "
-    />
+
     <link rel="stylesheet" href="js-form-validation.css" type="text/css" />
     <script src="sample-registration-form-validation.js"></script>
   </head>
   <body>
     <h1>Registration Form</h1>
+
     <form name="registration">
       <ul>
         <li><label for="firstname">First Name:</label></li>
@@ -76,33 +70,6 @@
           <label for="end">Date of Departure:</label>
 
           <input type="date" id="end" name="departure" value="2022-01-01" />
-        </li>
-
-        <li><label for="passid">Password:</label></li>
-        <li>
-          <input
-            type="password"
-            name="passid"
-            id="passid"
-            size="12"
-            onBlur="passwd_validation();"
-          /><span id="passwd_err"></span>
-        </li>
-        <li><label for="username">Name:</label></li>
-        <li>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            size="50"
-            onBlur="username_validation();"
-          /><span id="name_err"></span>
-        </li>
-        <li><label for="address">Address:</label></li>
-        <li>
-          <input type="text" name="address" id="address" size="50" /><span
-            id="add_err"
-          ></span>
         </li>
         <li><label for="country">Country:</label></li>
         <li>
@@ -356,45 +323,50 @@
             <option value="ZW">Zimbabwe</option></select
           ><span id="country_err"></span>
         </li>
-        <li><label for="zip">ZIP Code:</label></li>
+        <li><label for="noofpersons">Number of Persons:</label></li>
         <li>
           <input
             type="text"
-            name="zip"
-            id="zip"
-            onBlur="zip_validation();"
-          /><span id="zip_err"></span>
+            name="noofpersons"
+            id="noofpersons"
+            onBlur="noofpersons_validation();"
+          /><span id="noofpersons_err"></span>
         </li>
 
-        <li><label id="gender">Sex:</label></li>
+        <li><label for="specialreq">Any special Request:</label></li>
+        <li>
+          <input type="text" name="specialreq" id="specialreq" size="50" /><span
+            id="specialreq_err"
+          ></span>
+        </li>
+
+        <li><label id="payment">Payment Method:</label></li>
         <li>
           <input
             type="radio"
-            name="msex"
-            id="msex"
-            value="Male"
-            onBlur="gender_validation();"
-          /><span>Male</span>
+            name="debit"
+            id="debit"
+            value="Debit"
+            onBlur="payment_validation();"
+          /><span>Debit</span>
         </li>
         <li>
-          <input type="radio" name="fsex" id="fsex" value="Female" /><span
-            >Female</span
-          ><span id="gender_err"></span>
+          <input type="radio" name="credit" id="credit" value="Credit" /><span
+            >Credit</span
+          ><span id="payment_err"></span>
         </li>
-        <li><label>Language:</label></li>
+
         <li>
-          <input type="checkbox" name="en" value="en" checked /><span
-            >English</span
-          >
+          <div>
+            <input type="submit" name="submit" value="Submit" />
+
+            <input type="reset" name="reset" value="Reset" />
+
+            <div class="cancel">
+              <input type="reset" name="cancel" value="Cancel" />
+            </div>
+          </div>
         </li>
-        <li>
-          <input type="checkbox" name="nonen" value="noen" /><span
-            >Non English</span
-          >
-        </li>
-        <li><label for="desc">About:</label></li>
-        <li><textarea name="desc" id="desc"></textarea></li>
-        <li><input type="submit" name="submit" value="Submit" /></li>
       </ul>
     </form>
   </body>
