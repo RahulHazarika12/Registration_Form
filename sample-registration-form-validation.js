@@ -2,7 +2,7 @@ function formValidation() {
   var fname = document.registration.firstname;
   var lname = document.registration.lastname;
   var uid = document.registration.userid;
-  var passid = document.registration.passid;
+  
   var uadd = document.registration.address;
   var ucountry = document.registration.country;
   var uzip = document.registration.zip;
