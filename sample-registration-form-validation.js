@@ -5,7 +5,7 @@ function formValidation() {
   
   var uadd = document.registration.address;
   var ucountry = document.registration.country;
-  var uzip = document.registration.zip;
+ 
   var uemail = document.registration.email;
   var umsex = document.registration.msex;
   var ufsex = document.registration.fsex;
