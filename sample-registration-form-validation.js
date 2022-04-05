@@ -109,16 +109,7 @@ function countryselect(ucountry) {
     return true;
   }
 }
-function allnumeric(uzip) {
-  var numbers = /^[0-9]+$/;
-  if (uzip.value.match(numbers)) {
-    return true;
-  } else {
-    alert("ZIP code must have numeric characters only");
-    uzip.focus();
-    return false;
-  }
-}
+
 
 function validsex(umsex, ufsex) {
   x = 0;
