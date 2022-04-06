@@ -58,7 +58,7 @@ form textarea {
   color: black;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 1px;
   font-family: Times New Roman sans-serif;
   background-color: #ffcccc;
 }
