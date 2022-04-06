@@ -17,11 +17,11 @@ function formValidation() {
           if (allLetter(uname)) {
             if (alphanumeric(uadd)) {
               if (countryselect(ucountry)) {
-                if (allnumeric(uzip)) {
-                  if (passid_validation(passid, 7, 12)) {
-                    if (validsex(umsex, ufsex)) {
-                    }
-                  }
+               
+                 if (passid_validation(passid, 7, 12)) {
+                   if (validsex(umsex, ufsex)) {
+                   }
+                  
                 }
               }
             }
