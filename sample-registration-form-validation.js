@@ -17,7 +17,6 @@ function formValidation() {
           if (allLetter(uname)) {
             if (alphanumeric(uadd)) {
               if (countryselect(ucountry)) {
-               
                  if (passid_validation(passid, 7, 12)) {
                    if (validsex(umsex, ufsex)) {
                    }
